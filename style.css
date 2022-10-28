@@ -1,12 +1,12 @@
 @media (prefers-color-scheme: dark) {
   :root {
     --bg: #010101;
-    --text: #ffffff;
+    --text: #ffffff  ;
     --subtext: #a3a2a7;
-    --linktext: #ffffff;
+    --linktext: #0c79ff  ;
     --underline: #313133;
     --sectionbg: #1c1c1e;
-    --buttoncolor: #ffff00f;
+    --buttoncolor: #0c79ff;
     --buttonbgcolor: #1c1c1e;
   }
 }
@@ -170,5 +170,5 @@ footer {
 
 a {
   text-decoration: none;
-  color: #ffffff;
+  
 }
