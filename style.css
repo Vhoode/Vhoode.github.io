@@ -13,6 +13,7 @@
 a:hover {
     color: #3a7999;
     transform: scale(1.1);
+     text-shadow: 0 0px 1px rgba(0, 0, 0, 0.3);
 }
 
 .header__avatar:hover {
@@ -33,23 +34,24 @@ transform: scale(1.2);
 }
 
 body {
-  font-family: "Helvetica";
-  background-color: var(--bg);
+  font-family: "Franklin Gothic";
+  background-color:var(--bg);
   color: var(--text);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
 }
 
 .header {
   box-sizing: border-box;
-  margin: 40px 0 20px 0;
+  margin: 35px 0 20px 0;
   display: grid;
   grid-template-areas:
     "img title"
     "img subtitile";
-  width: 320px;
+  width: 330px;
   column-gap: 20px;
   row-gap: 10px;
   border-radius: 20px;
@@ -58,7 +60,7 @@ body {
 }
 
 .header__avatar {
-  border-radius: 50%;
+  border-radius: 30%;
   grid-area: img;
   width: 80px;
   height: 80px;
@@ -69,14 +71,14 @@ body {
   font-weight: 700;
   font-size: 22px;
   line-height: 1.2;
-  font-family: "Helvetica Neue";
+  font-family: "Franklin Gothic";
   grid-area: title;
   align-items: center;
 }
 
 .header__subtitle {
   color: var(--subtext);
-  font-weight: 400;
+  font-weight: 500;
   font-size: 14px;
   line-height: 1.4;
   margin: 0;
@@ -146,26 +148,26 @@ body {
 
 footer {
   margin: 0 0 40px 0;
+
+
 }
+
 .button-link {
-  margin-top: 10px;
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  padding: 10px;
-  width: 320px;
-  background: var(--buttonbgcolor);
-  border-radius: 10px;
-  border: none;
-  outline: none;
-
-  font-size: 14px;
-  line-height: 1.4;
-
-  color: var(--buttoncolor);
+  font-size: 15px;
+  font-family: monospace;
+  color: #fff;
+  background: linear-gradient(to left, #8e2de2, #4a00e0, #8e2de2);
   text-decoration: none;
+  padding: 10px 110px;
+  border-radius: 15px;
+  background-size: 200%;
+  transition: .5s;
+  border :3px;
+  cursor: pointer;
+}
+
+.button-link:hover {
+  background-position: right;
 }
 
 a {
